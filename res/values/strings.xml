@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Acelerómetro App</string>
+    <string name="optionEjes">Ver/Ocultar datos</string>
+    <string name="optionLicencia">Licencia</string>
+    <string name="optionCodigo">Código fuente</string>
+    <string name="optionAyuda">Acerca de</string> 
+    <string name="pasoactual">0</string>
+    <string name="descriptionImg">ImageView</string>
+    <string name="feedbackString">Pulsa play para comenzar</string>
+
+</resources>

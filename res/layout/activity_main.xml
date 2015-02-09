@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:gravity="start" >
+
+    <TextView
+        android:id="@+id/bienvenido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Start -->
+    <Button
+        android:id="@+id/play"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bienvenido"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/start" />
+    <!-- End Start -->
+    
+    <!-- Contador -->
+    <TextView
+        android:id="@+id/pasoactual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bienvenido"
+        android:layout_centerHorizontal="true"
+        android:text="@string/pasoactual"
+        android:textColor="#787879"
+        android:textSize="130sp"
+        android:visibility="gone" />
+    <!-- End contador -->
+
+	<!-- Movimientos -->
+    <ImageView
+        android:id="@+id/estado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bienvenido"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/descriptionImg"
+        android:layout_marginTop="185dp"
+        android:src="@drawable/estado1" />
+    <!-- End movimientos -->
+
+    <!-- Feedback Text -->
+    <TextView
+        android:id="@+id/feedbackText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/estado"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/feedbackString" />
+    <!-- End Feedback Text -->
+
+    <!-- Boton reset -->
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feedbackText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/descriptionImg"
+        android:src="@drawable/reload" />
+    <!-- End Boton reset -->
+	
+	<!-- ensor XYZ -->
+
+	<LinearLayout
+	    android:id="@+id/value_container"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentRight="true"
+	    android:background="#f2f2aa"
+	    android:orientation="horizontal" 
+	    android:visibility="gone" >
+
+	    <TextView
+	        android:id="@+id/valueXYZ"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textColor="#787879"
+	        android:layout_margin="5dp"
+	        android:layout_weight="1" />
+
+	    <TextView
+	        android:id="@+id/valueAccXYZ"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textColor="#787879"
+	        android:layout_margin="5dp"
+	        android:layout_weight="1" />
+
+	</LinearLayout>
+    <!-- End Sensor XYZ -->
+
+</RelativeLayout>
